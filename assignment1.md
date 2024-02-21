@@ -38,7 +38,7 @@ http://cs101.openjudge.cn/practice/20742/
 
 
 
-思路：
+思路：刚上手python且上学期计概学的C++忘得干干净净，照着书现看了一下py里列表和for的使用方法捏
 
 
 
