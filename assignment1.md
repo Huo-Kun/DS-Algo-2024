@@ -73,13 +73,50 @@ greedy/strings, 1000, http://codeforces.com/problemset/problem/58/A
 ##### 代码
 
 ```python
-# 
+s = input()
+num = 0
+for i in range(0, len(s)):
+    if num == 0:
+        if s[i] == 'h':
+            num = num + 1
+            continue
+        else:
+            continue
+    if num == 1:
+        if s[i] == 'e':
+            num = num + 1
+            continue
+        else:
+            continue
+    if num == 2:
+        if s[i] == 'l':
+            num = num + 1
+            continue
+        else:
+            continue
+    if num == 3:
+        if s[i] == 'l':
+            num = num + 1
+            continue
+        else:
+            continue
+    if num == 4:
+        if s[i] == 'o':
+            num = num + 1
+            continue
+        else:
+            continue
+if num == 5:
+    print('YES')
+else:
+    print('NO')
 
 ```
 
 
 
-代码运行截图 ==（至少包含有"Accepted"）==
+![image](https://github.com/Huo-Kun/DS-Algo-2024/assets/142503647/0a2f6045-c17b-4f53-81c1-3222ab673e33)
+
 
 
 
