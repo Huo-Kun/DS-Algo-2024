@@ -45,7 +45,6 @@ http://cs101.openjudge.cn/practice/20742/
 ##### 代码
 
 ```python
-# 
 n = int(input())
 list = [0, 1, 1]
 for i in range(3, n+1):
