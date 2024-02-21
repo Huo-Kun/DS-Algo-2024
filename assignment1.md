@@ -66,7 +66,7 @@ greedy/strings, 1000, http://codeforces.com/problemset/problem/58/A
 
 
 
-思路：
+思路：定义一个状态参数n，按照符合情况做判定
 
 
 
@@ -128,20 +128,31 @@ implementation/strings, 1000, http://codeforces.com/problemset/problem/118/A
 
 
 
-思路：
+思路：py里的字符串不能直接修改元素，但是可以通过转换为list操作之后再用.join()函数将其复原，且利用了条件判断中"in/not in"的用法
 
 
 
 ##### 代码
 
 ```python
-# 
+s = input()
+s1 = list(s)
+s2 = []
+for i in range(0, len(s)):
+    s1[i] = s1[i].lower()
+for i in range(0, len(s)):
+    if s1[i] not in 'aoyeui':
+        s2.append('.')
+        s2.append(s1[i])
+s = ''.join(s2)
+print(s)
 
 ```
 
 
 
-代码运行截图 ==（AC代码截图，至少包含有"Accepted"）==
+![image](https://github.com/Huo-Kun/DS-Algo-2024/assets/142503647/a9304bf6-5a24-4eb7-b4a3-c35a9f3699e1)
+
 
 
 
