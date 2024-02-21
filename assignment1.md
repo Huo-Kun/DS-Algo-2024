@@ -1,8 +1,8 @@
 # Assignment #1: 拉齐大家Python水平
 
-Updated 0940 GMT+8 Feb 19, 2024
+Updated 0940 GMT+8 Feb 21, 2024
 
-2023 fall, Complied by ==同学的姓名、院系==
+2024 spring, Complied by 王宇轩 信科
 
 
 
@@ -22,13 +22,11 @@ Updated 0940 GMT+8 Feb 19, 2024
 
 **编程环境**
 
-==（请改为同学的操作系统、编程环境等）==
 
-操作系统：macOS Ventura 13.4.1 (c)
+操作系统：Windows 11
 
-Python编程环境：Spyder IDE 5.2.2, PyCharm 2023.1.4 (Professional Edition)
+Python编程环境：VS Code, PyCharm 2023.1.4
 
-C/C++编程环境：Mac terminal vi (version 9.0.1424), g++/gcc (Apple clang version 14.0.3, clang-1403.0.22.14.1)
 
 
 
@@ -48,15 +46,19 @@ http://cs101.openjudge.cn/practice/20742/
 
 ```python
 # 
-
+n = int(input())
+list = [0, 1, 1]
+for i in range(3, n+1):
+    x = list[i - 1] + list[i - 2] + list[i - 3]
+    list.append(x)
+print(list[n])
 ```
 
 
 
-代码运行截图 ==（至少包含有"Accepted"）==
 
 
-
+![image](https://github.com/Huo-Kun/DS-Algo-2024/assets/142503647/32fa0c2c-d81c-4dc6-bcb4-8838aeef5750)
 
 
 ### 58A. Chat room
